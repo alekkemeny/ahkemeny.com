@@ -97,8 +97,8 @@
 
                             <div class="vacuum-chamber-section">
                                 <div class="top-panel">
-                                    <video class="vacuum-chamber-video" autoplay muted loop playsinline>
-                                        <source src="vacuum_chamber_2x_hq.mov" type="video/mp4">
+                                    <video id="vacuum-chamber-video" class="vacuum-chamber-video" autoplay muted loop playsinline>
+                                        <source src="vacuum_chamber_2x_hq.mp4" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                 </div>
@@ -282,7 +282,7 @@
     <script>
         // Ensure videos play properly
         document.addEventListener('DOMContentLoaded', function() {
-            const videos = ['spot-video', 'spot-video-2'];
+            const videos = ['spot-video', 'spot-video-2', 'vacuum-chamber-video'];
             const singleVideos = document.querySelectorAll('.benchmarking-video');
             
             // Handle paired videos
