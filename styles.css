@@ -568,7 +568,19 @@ blockquote p {
         display: none; /* Hide timeline dates on mobile */
     }
     
-
+    /* Reduce spacing around the horizontal line for mobile */
+    .projects-section {
+        margin-bottom: -30px;
+    }
+    
+    /* Make research section text span full width on mobile */
+    .research-section h3 {
+        margin-left: 0 !important;
+    }
+    
+    .research-section p {
+        margin-left: 0 !important;
+    }
 }
 
 .kronacash-image {
@@ -604,6 +616,7 @@ blockquote p {
     .kronacash-gallery {
         flex-direction: column;
         gap: 15px;
+        margin: 20px 0 20px -3px;
     }
     
     .kronacash-gallery-image {
@@ -613,9 +626,9 @@ blockquote p {
 
 .particle-tracking-gif {
     display: block;
-    max-width: 950px;
+    max-width: 940px;
     width: 100%;
-    margin: 20px auto 20px 40px;
+    margin: 20px auto 5px 40px;
     background: #fff;
 } 
 
@@ -958,7 +971,18 @@ blockquote {
     text-align: left !important;
   }
   
-  .harvard-logo-container,
+  .harvard-logo-container {
+    position: static !important;
+    transform: none !important;
+    margin: 0 0 8px 0 !important;
+    order: -1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    top: auto !important;
+    right: auto !important;
+  }
+  
   .mit-logo-container,
   .ibm-logo-container,
   .princeton-logo-container,
@@ -977,26 +1001,77 @@ blockquote {
     right: auto !important;
   }
   
-  .harvard-logo,
-  .mit-logo,
+  .harvard-logo {
+    margin: 0 !important;
+    height: 65px !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+  }
+  
   .ibm-logo,
-  .mitibm-logo,
-  .princeton-logo,
-  .duke-logo,
-  .cern-logo,
+  .mitibm-logo {
+    margin: 0 !important;
+    height: 90px !important;
+    margin-top: -15px !important;
+    margin-right: 65px !important;
+    margin-bottom: -5px !important;
+  }
+  
+  .mit-logo {
+    margin: 0 !important;
+    height: 170px !important;
+    margin-top: -75px !important;
+    margin-right: 27px !important;
+    margin-bottom: -75px !important;
+  }
+  
+  .princeton-logo {
+    margin: 0 !important;
+    height: 75px !important;
+    margin-top: -15px !important;
+    margin-right: 0 !important;
+    margin-bottom: -10px !important;
+  }
+  
+  .dqc-logo {
+    margin: 0 !important;
+    height: 60px !important;
+    margin-top: -1px !important;
+    margin-right: 0 !important;
+    margin-bottom: -3px !important;
+  }
+
+  .duke-logo {
+    margin: 0 !important;
+    height: 90px !important;
+    margin-top: -30px !important;
+    margin-right: 200px !important;
+    margin-bottom: -25px !important;
+  }
+
+  .cern-logo {
+    margin: 0 !important;
+    height: 60px !important;
+    margin-top: -20px !important;
+    margin-right: 40px !important;
+    margin-bottom: -5px !important;
+  }
+  
   .kronohealth-logo,
   .inkwell-logo {
     margin: 0 !important;
     height: 50px !important;
-    margin-top: 0 !important;
+    margin-top: -15px !important;
     margin-right: 0 !important;
+    margin-bottom: 3px !important;
   }
   
   .inkwell-logo-text {
     margin: 0 !important;
     font-size: 1.8rem !important;
-    margin-top: 0 !important;
-    margin-right: 0 !important;
+    margin-top: -15px !important;
+    margin-right: -15px !important;
+    margin-bottom: -15px !important;
   }
   
   /* Fix NaCs image and vacuum chamber video for mobile */
@@ -1018,7 +1093,12 @@ blockquote {
   }
   
   /* Fix other research images and videos for mobile */
-  .particle-tracking-gif,
+  .particle-tracking-gif {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0 5px 0 !important;
+  }
+  
   .slow-light-gif,
   .spin-locking-gif {
     max-width: 100% !important;
@@ -1069,5 +1149,10 @@ blockquote {
   blockquote {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  
+  /* Move superconducting topology graph left on mobile */
+  .image-pair img[alt="Superconducting quantum topology"] {
+    margin-left: -10px !important;
   }
 }
