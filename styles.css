@@ -565,15 +565,10 @@ blockquote p {
         display: none; /* Hide the timeline dots */
     }
     .timeline-date {
-        position: static;
-        width: auto;
-        left: auto;
-        text-align: left;
-        font-size: 1rem;
-        margin-bottom: 10px;
-        display: block;
-        font-weight: 700;
+        display: none; /* Hide timeline dates on mobile */
     }
+    
+
 }
 
 .kronacash-image {
@@ -954,5 +949,125 @@ blockquote {
   
   .chamber-image-left, .chamber-image-right {
     max-width: 100%;
+  }
+  
+  /* Mobile logo positioning - must be at end to override desktop styles */
+  .title-with-logos {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left !important;
+  }
+  
+  .harvard-logo-container,
+  .mit-logo-container,
+  .ibm-logo-container,
+  .princeton-logo-container,
+  .duke-logo-container,
+  .cern-logo-container,
+  .kronohealth-logos,
+  .inkwell-logo-container {
+    position: static !important;
+    transform: none !important;
+    margin: 0 0 15px 0 !important;
+    order: -1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    top: auto !important;
+    right: auto !important;
+  }
+  
+  .harvard-logo,
+  .mit-logo,
+  .ibm-logo,
+  .mitibm-logo,
+  .princeton-logo,
+  .duke-logo,
+  .cern-logo,
+  .kronohealth-logo,
+  .inkwell-logo {
+    margin: 0 !important;
+    height: 50px !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .inkwell-logo-text {
+    margin: 0 !important;
+    font-size: 1.8rem !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Fix NaCs image and vacuum chamber video for mobile */
+  .NaCs-image {
+    max-width: 100% !important;
+    margin: 20px 0 !important;
+    width: 100% !important;
+  }
+  
+  .vacuum-chamber-section {
+    margin: 20px 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .vacuum-chamber-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* Fix other research images and videos for mobile */
+  .particle-tracking-gif,
+  .slow-light-gif,
+  .spin-locking-gif {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+  }
+  
+  .benchmarking-video,
+  .spot-video {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+  }
+  
+  .video-pair {
+    flex-direction: column !important;
+    margin: 20px 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .video-pair .spot-video {
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  
+  .image-pair {
+    flex-direction: column !important;
+    gap: 15px !important;
+    margin: 20px 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .image-pair img {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  .kronacash-image {
+    margin: 20px 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .responsive-video-container {
+    margin: 20px 0 !important;
+  }
+  
+  /* Fix blockquote margin for mobile */
+  blockquote {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
