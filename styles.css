@@ -886,3 +886,63 @@ blockquote {
   width: 99%;
   height: 95%;
 }
+
+.NaCs-image {
+    display: block;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto 0 70px;
+    background: #fff;
+}
+
+.vacuum-chamber-section {
+  margin: 30px 0 30px 40px;
+  max-width: 900px;
+}
+
+.top-panel {
+  margin-bottom: 20px;
+}
+
+.vacuum-chamber-video {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin-left: 150px;
+}
+
+.bottom-panel {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.chamber-image-left, .chamber-image-right {
+  flex: 1;
+  max-width: 48%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.chamber-image-left {
+  object-fit: cover;
+  object-position: center;
+  height: 350px;
+}
+
+@media (max-width: 768px) {
+  .vacuum-chamber-section {
+    margin: 20px 0 20px 20px;
+  }
+  
+  .bottom-panel {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .chamber-image-left, .chamber-image-right {
+    max-width: 100%;
+  }
+}
