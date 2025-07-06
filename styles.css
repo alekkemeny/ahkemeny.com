@@ -891,12 +891,12 @@ blockquote {
     display: block;
     max-width: 900px;
     width: 100%;
-    margin: 20px auto 0 70px;
+    margin: 20px auto 0 65px;
     background: #fff;
 }
 
 .vacuum-chamber-section {
-  margin: 30px 0 30px 40px;
+  margin: 30px 0 30px 70px;
   max-width: 900px;
 }
 
